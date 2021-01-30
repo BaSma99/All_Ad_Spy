@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+/* Start Counter*/
+.counter_div {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.counter {
+  color: #27264E;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 100%;
+  padding: 77px 32px 40px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.counter:before, .counter:after {
+  content: "";
+  background: #EED4BF;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  -webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+
+.counter h3 {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 3px;
+  font-family: "Acme", sans-serif;
+}
+
+.counter i {
+  color: #27264E;
+  background: linear-gradient(45deg, #EED4BF 49%, #EEDFFF 50%);
+  font-size: 33px;
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.counter i.fa {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.counter span {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.counter:after {
+  background: linear-gradient(45deg, #EED4BF 49%, #EEDFFF 50%);
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  top: 0;
+  left: 0;
+  z-index: -2;
+  -webkit-clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+          clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+}
+
+.counter:hover i.fa {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+
+@media screen and (max-width: 990px) {
+  .counter {
+    margin-bottom: 40px;
+  }
+}
+
+.section-div {
+  color: #EED4BF;
+}
+
+/*End Creative Tool Section*/
+/*Start Features Section*/
+.features-section {
+  background-color: #35356B;
+}
+
+.features-section h2 {
+  font-family: "Acme", sans-serif;
+  color: #EED4BF;
+}
+
+.features-section h5 {
+  color: #EED4BF;
+  font-family: "Acme", sans-serif;
+}
+
+.features-section p {
+  color: #EED4BF;
+}
+
+.features-section button {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  color: #EED4BF;
+  border-radius: 50px;
+  font-weight: 500;
+  border: none;
+  background: #27264E;
+  cursor: pointer;
+  padding: 10px 30px;
+  min-width: 163px;
+}
+
+.features-section button:focus {
+  outline: 0;
+}
+
+.features-section button:hover {
+  opacity: 0.8;
+}
+
+.features {
+  display: block;
+  padding: 40px 20px 37px;
+  text-align: center;
+}
+
+.features p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: #EED4BF;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Acme", sans-serif;
+}
+
+.features i {
+  margin: 0 0 15px;
+  color: #EED4BF;
+}
+
+/*End Features Section*/
+/* Start Pricing */
+.pricing {
+  margin-bottom: 50px;
+  padding: 100px 0;
+  background: #35356B;
+  color: #27264E;
+}
+
+.pricing h2 {
+  color: #EED4BF;
+  font-family: "Acme", sans-serif;
+}
+
+.pricing h5 {
+  color: #27264E;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.pricing h6 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing h6 span {
+  font-size: 0.8rem;
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing button {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.9;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: #27264E;
+  color: #EED4BF;
+}
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -0.25rem;
+    margin-bottom: 0.25rem;
+    -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(250, 244, 244, 0.3);
+            box-shadow: 0 0.5rem 1rem 0 rgba(250, 244, 244, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+/* End Pricing */
+/*# sourceMappingURL=home.css.map */
